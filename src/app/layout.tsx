@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Serif_Text } from "next/font/google";
+import { DM_Serif_Text, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar";
 
@@ -7,6 +7,12 @@ const dmSerif = DM_Serif_Text({
 	weight: "400",
 	subsets: ["latin"],
 	variable: "--font-dm-serif",
+});
+
+const dmSans = DM_Sans({
+	weight: ["400", "500", "700"],
+	subsets: ["latin"],
+	variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +28,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body
-				className={`${dmSerif.variable} antialiased h-screen flex flex-col`}
+				className={`${dmSerif.variable} ${dmSans.variable} antialiased h-screen flex flex-col`}
 			>
 				<Navbar />
 				<main className="flex-grow">{children}</main>
