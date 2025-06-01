@@ -5,7 +5,7 @@ export default function Navbar() {
 	return (
 		<div className="p-5 border-black border-b-2 flex items-center justify-between">
 			<h1 className="text-3xl">shotbytinu</h1>
-			<div className="flex gap-5 items-center">
+			<div className="hidden md:flex gap-5 items-center">
 				<Link href="/" className="text-xl underline-link">
 					Home
 				</Link>

@@ -45,7 +45,7 @@ export default function page() {
 	return (
 		<div>
 			<h1 className="pt-5 text-4xl text-center">Gallery</h1>
-			<div className="px-10 lg:px-30 pt-4">
+			<div className="px-5 lg:px-30 pt-4">
 				<LightGallery
 					speed={200}
 					plugins={[lgThumbnail, lgZoom]}
