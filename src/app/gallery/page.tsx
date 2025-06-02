@@ -49,11 +49,10 @@ export default function page() {
 				<LightGallery
 					speed={200}
 					plugins={[lgThumbnail, lgZoom]}
-          thumbnail={true}
-          zoom={true}
-          download={false}
-          fullScreen={true}
-          
+					thumbnail={true}
+					zoom={true}
+					download={false}
+					fullScreen={true}
 					selector=".gallery-item"
 				>
 					<div className="columns-1 sm:columns-2 lg:columns-3 gap-4">

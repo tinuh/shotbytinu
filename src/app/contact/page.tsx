@@ -16,7 +16,6 @@ export default function Page() {
 	const {
 		register,
 		handleSubmit,
-		watch,
 		reset,
 		formState: { errors, isSubmitting },
 	} = useForm<formData>();
@@ -25,7 +24,7 @@ export default function Page() {
 		await console.log(data);
 
 		//Make a post request to cloudflare worker to submit form response
-		let submitPromise = fetch("https://contact.tinu-personal.workers.dev", {
+		const submitPromise = fetch("https://contact.tinu-personal.workers.dev", {
 			method: "POST",
 			mode: "cors",
 			cache: "no-cache",
