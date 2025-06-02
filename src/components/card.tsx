@@ -12,7 +12,7 @@ export default function Card(props: CardProps) {
 			<img
 				src={props.imageUrl}
 				alt={props.name}
-				className="w-full h-48 object-cover"
+				className="w-full h-56 object-cover"
 			/>
 			<div className="p-4">
 				<h2 className="text-xl font-bold">{props.name}</h2>

@@ -13,28 +13,29 @@ import lgZoom from "lightgallery/plugins/zoom";
 
 export default function page() {
 	const images = [
-		{
-			src: "/gallery/gala_pic_1.jpg",
-			thumbnail: "/gallery/gala_pic_1_thumb.jpg",
-		},
 		{ src: "/gallery/kiyan.jpg", thumbnail: "/gallery/kiyan_thumb.jpg" },
+		{
+			src: "/gallery/septa.jpg",
+			thumbnail: "/gallery/septa_thumb.jpg",
+		},
+		{ src: "/gallery/nikolay.jpg", thumbnail: "/gallery/nikolay_thumb.jpg" },
 		{
 			src: "/gallery/gala_pic_2.jpg",
 			thumbnail: "/gallery/gala_pic_2_thumb.jpg",
 		},
-		{
-			src: "/gallery/nick_beach.jpg",
-			thumbnail: "/gallery/nick_beach_thumb.jpg",
-		},
-		{ src: "/gallery/aashrith.jpg", thumbnail: "/gallery/aashrith_thumb.jpg" },
 		{ src: "/gallery/burj.jpg", thumbnail: "/gallery/burj_thumb.jpg" },
+		{ src: "/gallery/aashrith.jpg", thumbnail: "/gallery/aashrith_thumb.jpg" },
 		{ src: "/gallery/nick.jpg", thumbnail: "/gallery/nick_thumb.jpg" },
 		{ src: "/gallery/ilhom.jpg", thumbnail: "/gallery/ilhom_thumb.jpg" },
 		{
 			src: "/gallery/grad_caps.jpg",
 			thumbnail: "/gallery/grad_caps_thumb.jpg",
 		},
-		{ src: "/gallery/nikolay.jpg", thumbnail: "/gallery/nikolay_thumb.jpg" },
+
+		{
+			src: "/gallery/gala_pic_1.jpg",
+			thumbnail: "/gallery/gala_pic_1_thumb.jpg",
+		},
 		{ src: "/gallery/wheaton.jpg", thumbnail: "/gallery/wheaton_thumb.jpg" },
 		{
 			src: "/gallery/char_minar.jpg",

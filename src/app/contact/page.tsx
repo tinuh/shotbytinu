@@ -146,7 +146,7 @@ export default function Page() {
 				<button
 					type="submit"
 					disabled={isSubmitting}
-					className="mt-5 bg-black text-white px-4 py-2 hover:bg-gray-800 transition-colors duration-200 cursor-pointer"
+					className="mt-5 no-serif bg-black text-white px-4 py-2 hover:bg-gray-800 transition-colors duration-200 cursor-pointer"
 				>
 					Send Message
 				</button>
