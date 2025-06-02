@@ -27,6 +27,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
+			<head>
+				<script
+					defer
+					data-domain="shotbytinu.com"
+					src="https://stats.tinu.tech/js/plausible.js"
+				></script>
+			</head>
 			<body
 				className={`${dmSerif.variable} ${dmSans.variable} antialiased h-screen flex flex-col`}
 			>
