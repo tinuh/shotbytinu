@@ -1,4 +1,4 @@
-import { FaImages, FaRegListAlt, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
 			<div className="basis-1/3 xl:basis-2/5">
 				<h1 className="text-5xl">shotbytinu</h1>
 				<h2 className="pt-5 text-2xl text-left">
-					Let's Make Your Memories Last Forever
+					Let&apos;s Make Your Memories Last Forever
 				</h2>
 				<div className="lg:pt-10 w-full flex flex-col lg:gap-5 items-left">
 					<Link
