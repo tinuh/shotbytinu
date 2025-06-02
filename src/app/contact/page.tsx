@@ -63,7 +63,7 @@ export default function Page() {
 				containerStyle={{}}
 				toastOptions={{
 					// Define default options
-					className: "contact-form",
+					className: "no-serif",
 					duration: 5000,
 					removeDelay: 1000,
 					style: {
@@ -85,7 +85,7 @@ export default function Page() {
 				onSubmit={handleSubmit(onSubmit)}
 				className="flex flex-col items-center"
 			>
-				<div className="w-full px-5 md:w-200 contact-form">
+				<div className="w-full px-5 md:w-200 no-serif">
 					<p className="pb-5 text-center text-gray-600">
 						Interested in booking a photoshoot? Feel free to reach out via the
 						form below.

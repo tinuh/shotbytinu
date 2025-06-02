@@ -4,7 +4,9 @@ import { BsInstagram } from "react-icons/bs";
 export default function Navbar() {
 	return (
 		<div className="p-5 border-black border-b-2 flex items-center justify-between">
-			<h1 className="text-3xl">shotbytinu</h1>
+			<Link href="/" className="text-3xl">
+				shotbytinu
+			</Link>
 			<div className="hidden md:flex gap-5 items-center">
 				<Link href="/" className="text-xl underline-link">
 					Home
@@ -15,9 +17,9 @@ export default function Navbar() {
 				<Link href="/services" className="text-xl underline-link">
 					Services
 				</Link>
-				<Link href="/about" className="text-xl underline-link">
+				{/* <Link href="/about" className="text-xl underline-link">
 					About
-				</Link>
+				</Link> */}
 				<Link href="/contact" className="text-xl underline-link">
 					Contact
 				</Link>
