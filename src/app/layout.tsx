@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-	title: "shotbytinu",
+	title: "Professional Photography Services - shotbytinu",
 	description: "Photography Portfolio Website of Tinu Vanapamula",
 };
 
