@@ -33,7 +33,7 @@ export default function RootLayout({
 					data-domain="shotbytinu.com"
 					src="https://stats.tinu.tech/js/plausible.js"
 				></script>
-				<meta property="og:image" content="/gallery/kiyan_thumb.jpg"></meta>
+				<meta property="og:image" content="/gallery/char_minar_thumb.jpg"></meta>
 			</head>
 			<body
 				className={`${dmSerif.variable} ${dmSans.variable} antialiased h-screen flex flex-col`}
