@@ -64,6 +64,7 @@ export default function page() {
 					download={false}
 					fullScreen={true}
 					selector=".gallery-item"
+					closable={true}
 				>
 					<div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
 						{images.map((image, index) => (

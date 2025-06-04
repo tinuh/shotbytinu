@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { BsInstagram } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
 import Hamburger from "hamburger-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -32,6 +33,7 @@ const menuVariants = {
 	},
 	closed: {
 		height: "100vh",
+		zIndex: -1,
 		backgroundColor: `rgba(${"255, 255, 255"}, 0)`,
 	},
 };
