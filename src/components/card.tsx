@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 interface CardProps {
 	name: string;
@@ -16,6 +17,20 @@ export default function Card(props: CardProps) {
 			/>
 			<div className="p-4">
 				<h2 className="text-xl font-bold">{props.name}</h2>
+				<div className="py-2">
+					<p className="flex items-center gap-2 text-green-600">
+						<IoMdCheckmarkCircleOutline className="inline" />
+						<span>Expert Editing</span>
+					</p>
+					<p className="flex items-center gap-2 text-green-600">
+						<IoMdCheckmarkCircleOutline className="inline" />
+						<span>7-day turnaround time</span>
+					</p>
+					<p className="flex items-center gap-2 text-green-600">
+						<IoMdCheckmarkCircleOutline className="inline" />
+						<span>Flexible Timings & Locations</span>
+					</p>
+				</div>
 				<p className="text-gray-600">{props.description}</p>
 			</div>
 			<Link
