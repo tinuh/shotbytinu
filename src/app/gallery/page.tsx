@@ -18,13 +18,17 @@ export default function page() {
 			src: "/gallery/septa.jpg",
 			thumbnail: "/gallery/septa_thumb.jpg",
 		},
-		{ src: "/gallery/nikolay.jpg", thumbnail: "/gallery/nikolay_thumb.jpg" },
 		{
 			src: "/gallery/gala_pic_2.jpg",
 			thumbnail: "/gallery/gala_pic_2_thumb.jpg",
 		},
-		{ src: "/gallery/burj.jpg", thumbnail: "/gallery/burj_thumb.jpg" },
+		{
+			src: "gallery/gala_pic_7.jpg",
+			thumbnail: "/gallery/gala_pic_7_thumb.jpg",
+		},
 		{ src: "/gallery/aashrith.jpg", thumbnail: "/gallery/aashrith_thumb.jpg" },
+		{ src: "/gallery/burj.jpg", thumbnail: "/gallery/burj_thumb.jpg" },
+		{ src: "/gallery/nikolay.jpg", thumbnail: "/gallery/nikolay_thumb.jpg" },
 		{ src: "/gallery/nick.jpg", thumbnail: "/gallery/nick_thumb.jpg" },
 		{ src: "/gallery/ilhom.jpg", thumbnail: "/gallery/ilhom_thumb.jpg" },
 		{
@@ -36,7 +40,12 @@ export default function page() {
 			src: "/gallery/gala_pic_1.jpg",
 			thumbnail: "/gallery/gala_pic_1_thumb.jpg",
 		},
-		{ src: "/gallery/wheaton.jpg", thumbnail: "/gallery/wheaton_thumb.jpg" },
+		{
+			src: "/gallery/nick_prof.jpg",
+			thumbnail: "/gallery/nick_prof_thumb.jpg",
+		},
+		{ src: "/gallery/3_suits.jpg", thumbnail: "/gallery/3_suits_thumb.jpg" },
+		// { src: "/gallery/wheaton.jpg", thumbnail: "/gallery/wheaton_thumb.jpg" },
 		{
 			src: "/gallery/char_minar.jpg",
 			thumbnail: "/gallery/char_minar_thumb.jpg",
@@ -67,7 +76,7 @@ export default function page() {
 								<img
 									alt={`Gallery Image ${index + 1}`}
 									src={image.thumbnail || image.src}
-									className="w-full hover:shadow-lg hover:brightness-110 transition-all duration-300 pb-4"
+									className="w-full hover:scale-102 transition-all duration-300 pb-4"
 								/>
 							</a>
 						))}

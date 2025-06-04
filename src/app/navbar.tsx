@@ -28,11 +28,11 @@ const elements = [
 const menuVariants = {
 	open: {
 		height: "100vh",
-		backdropFilter: "blur(30px)",
 		backgroundColor: `rgba(${"255, 255, 255"}, 1)`,
 	},
 	closed: {
-		backgroundColor: `rgba(${"255, 255, 255"}, 1)`,
+		height: "100vh",
+		backgroundColor: `rgba(${"255, 255, 255"}, 0)`,
 	},
 };
 
@@ -50,7 +50,7 @@ const innerVariants = {
 		marginTop: 0,
 	},
 	closed: {
-		marginTop: "-100vh",
+		marginTop: 0,
 	},
 };
 

@@ -91,9 +91,7 @@ export default function Page() {
 					</p>
 					<p className="flex gap-2 items-center">
 						<FaLocationDot className="inline text-black" />{" "}
-						<span className="text-gray-600">
-							Based in Burtonsville & College Park, MD
-						</span>
+						<span className="text-gray-600">Based in Burtonsville, MD</span>
 					</p>
 					<p className="flex gap-2 items-center pb-5">
 						<HiOutlineMail className="inline text-black" />{" "}
