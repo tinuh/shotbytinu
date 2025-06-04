@@ -1,52 +1,83 @@
+"use client";
+
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Home() {
 	return (
-		<div className="p-10 flex flex-col lg:flex-row lg:gap-10">
-			<div className="basis-1/3 xl:basis-2/5">
-				<h1 className="text-5xl">shotbytinu</h1>
-				<h2 className="pt-5 text-2xl text-left">
-					Let&apos;s Make Your Memories Last Forever
-				</h2>
-				<div className="lg:pt-10 w-full flex flex-col lg:gap-5 items-left">
+		<div className="relative flex flex-col md:flex-row">
+			<motion.div
+				initial={{ opacity: 0, y: 0 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.5, delay: 0.5 }}
+				className="absolute w-full flex justify-center left-0 right-0 top-20 z-100"
+			>
+				<div className="text-center text-white flex flex-col items-center">
+					<h1 className="text-6xl md:text-7xl pb-4">shotbytinu</h1>
+					<h2 className="pb-6 text-xl">
+						Let&apos;s Make Your Memories Last Forever
+					</h2>
 					<Link
 						href="/gallery"
-						className="flex font-bold text-2xl gap-2 hover:gap-5 max-w-max items-center mt-5 no-serif py-2 duration-200 cursor-pointer"
+						className="block max-w-max bg-white rounded text-black p-2 px-4 no-serif font-bold"
 					>
-						<span>Gallery</span> <FaArrowRight />
-					</Link>
-					<Link
-						href="/services"
-						className="flex font-bold text-2xl gap-2 hover:gap-5 max-w-max items-center mt-5 no-serif py-2 duration-200 cursor-pointer"
-					>
-						Services <FaArrowRight />
+						View Gallery
 					</Link>
 				</div>
-			</div>
-			<div className="basis-2/3 xl:basis-3/5 h-full flex justify-center w-full">
-				<div className="relative">
+			</motion.div>
+			<div className="basis-1/2 w-full">
+				<motion.div
+					initial={{ opacity: 0, y: 0 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.1 }}
+					className="w-full h-auto"
+				>
 					<img
 						src="/gallery/ilhom_2_thumb.jpg"
 						alt="Ilhom"
-						className="w-full lg:w-100 h-auto mt-5 lg:absolute left-0 bottom-20 z-20 lg:hover:scale-102 duration-300 transition-transform"
+						className="w-full h-auto"
 					/>
-					<img
-						src="/gallery/gala_pic_5_thumb.jpg"
-						alt="Gala Picture"
-						className="w-full lg:w-100 h-auto z-0 pt-5 lg:mt-10 lg:mb-10 lg:ml-40 mr-24 lg:hover:scale-102 duration-300 transition-transform"
-					/>
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0, y: 0 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.4 }}
+					className="w-full h-auto"
+				>
 					<img
 						src="/gallery/nikolay_point_thumb.jpg"
 						alt="Nikolay Pointing"
-						className="w-full lg:w-100 h-auto mt-5 lg:absolute right-0 bottom-0 z-10 lg:hover:scale-102 duration-300 transition-transform"
+						className="w-full h-auto"
 					/>
+				</motion.div>
+			</div>
+
+			<div className="basis-1/2 w-full">
+				<motion.div
+					initial={{ opacity: 0, y: 0 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.3 }}
+					className="w-full h-auto"
+				>
 					<img
-						src="/gallery/gala_pic_6_thumb.jpg"
-						alt="Nikolay Pointing"
-						className="w-full lg:w-60 h-auto mt-5 lg:absolute right-0 top-0 z-40 lg:hover:scale-102 duration-300 transition-transform"
+						src="/gallery/gala_pic_1_thumb.jpg"
+						alt="BSE Gala Picture 1"
+						className="w-full h-auto"
 					/>
-				</div>
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0, y: 0 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.2 }}
+					className="w-full h-auto"
+				>
+					<img
+						src="/gallery/grad_caps_thumb.jpg"
+						alt="Graduation Caps Picture"
+						className="w-full h-auto transition-transform"
+					/>
+				</motion.div>
 			</div>
 		</div>
 	);
