@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { BsInstagram } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi";
 import Hamburger from "hamburger-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
