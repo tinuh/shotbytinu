@@ -14,7 +14,7 @@ export default function Page() {
 					/>
 					<Card
 						name="Events"
-						description="From graduation parties to formals, I focus on documenting the energy and emotion of your events with crisp, vibrant imagery that tells your story."
+						description="I can capture and preserve the spirit of your special day, from graduation parties to formals, with vivid and crisp imagery that brings your story to life."
 						imageUrl="/gallery/gala_pic_4_thumb.jpg"
 					/>
 				</div>
