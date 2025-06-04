@@ -29,11 +29,16 @@ const menuVariants = {
 	open: {
 		height: "100vh",
 		backgroundColor: `rgba(${"255, 255, 255"}, 1)`,
+		transitionBegin: {
+			zIndex: 100,
+		}
 	},
 	closed: {
 		height: "100vh",
-		zIndex: -1,
 		backgroundColor: `rgba(${"255, 255, 255"}, 0)`,
+		transitionEnd: {
+			zIndex: -1,
+		},
 	},
 };
 
@@ -60,11 +65,11 @@ export default function Navbar() {
 
 	return (
 		<div className="p-5 border-black border-b-2 flex items-center justify-between">
-			<Link href="/" className="text-3xl z-30">
+			<Link href="/" className="text-3xl z-200">
 				shotbytinu
 			</Link>
 			<div className="flex md:hidden gap-5 items-center">
-				<div className="z-30">
+				<div className="z-200">
 					<Hamburger
 						toggled={isOpen}
 						toggle={setIsOpen}
@@ -80,7 +85,7 @@ export default function Navbar() {
 						animate={isOpen ? "open" : "closed"}
 						transition={{ duration: 0.5 }}
 						style={{
-							zIndex: 1,
+							zIndex: 100,
 							position: "fixed",
 							width: "100%",
 							textAlign: "center",
@@ -124,12 +129,6 @@ export default function Navbar() {
 										</div>
 									</motion.div>
 								))}
-								<motion.div
-									initial={false}
-									variants={linkVariants}
-									animate={isOpen ? "open" : "closed"}
-									transition={{ duration: 0.5, delay: 0.3 }}
-								></motion.div>
 							</div>
 						</motion.div>
 					</motion.nav>
