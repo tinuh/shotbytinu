@@ -26,7 +26,7 @@ export default function Page() {
 							perfecting my craft. I specialize in capturing moments that tell a
 							story, whether a graduation, a formal event, or a simple portrait.
 							My goal is to create images that not only look great but also
-							evoke the emotions of the moment. Beyond Photography, I'm a rising
+							evoke the emotions of the moment. Beyond Photography, I&apos;m a rising
 							junior at the University of Maryland, College Park studying
 							Computer Science & Economics. I love technology, playing ultimate
 							frisbee, weightlifting, rock climbing, and of course, photography.
