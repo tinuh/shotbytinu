@@ -29,7 +29,7 @@ export default function page() {
 		{ src: "/gallery/aashrith.jpg", thumbnail: "/gallery/aashrith_thumb.jpg" },
 		{
 			src: "/gallery/gala_pic_4.jpg",
-			thumbnail: "/gallery/gala_psic_4_thumb.jpg",
+			thumbnail: "/gallery/gala_pic_4_thumb.jpg",
 		},
 		{
 			src: "/gallery/gala_pic_3.jpg",
