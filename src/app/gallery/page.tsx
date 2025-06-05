@@ -64,6 +64,7 @@ export default function page() {
 			thumbnail: "/gallery/char_minar_thumb.jpg",
 		},
 		{ src: "/gallery/hemi.jpg", thumbnail: "/gallery/hemi_thumb.jpg" },
+		{ src: "/gallery/schlake.jpg", thumbnail: "/gallery/schlake_thumb.jpg" },
 	];
 
 	return (
