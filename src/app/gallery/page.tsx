@@ -27,10 +27,23 @@ export default function page() {
 			thumbnail: "/gallery/gala_pic_7_thumb.jpg",
 		},
 		{ src: "/gallery/aashrith.jpg", thumbnail: "/gallery/aashrith_thumb.jpg" },
+		{
+			src: "/gallery/gala_pic_4.jpg",
+			thumbnail: "/gallery/gala_pic_4_thumb.jpg",
+		},
+		{
+			src: "/gallery/gala_pic_3.jpg",
+			thumbnail: "/gallery/gala_pic_3_thumb.jpg",
+		},
+
 		{ src: "/gallery/burj.jpg", thumbnail: "/gallery/burj_thumb.jpg" },
 		{ src: "/gallery/nikolay.jpg", thumbnail: "/gallery/nikolay_thumb.jpg" },
 		{ src: "/gallery/nick.jpg", thumbnail: "/gallery/nick_thumb.jpg" },
 		{ src: "/gallery/ilhom.jpg", thumbnail: "/gallery/ilhom_thumb.jpg" },
+		{
+			src: "/gallery/philly_bus.jpg",
+			thumbnail: "/gallery/philly_bus_thumb.jpg",
+		},
 		{
 			src: "/gallery/grad_caps.jpg",
 			thumbnail: "/gallery/grad_caps_thumb.jpg",
@@ -50,6 +63,7 @@ export default function page() {
 			src: "/gallery/char_minar.jpg",
 			thumbnail: "/gallery/char_minar_thumb.jpg",
 		},
+		{ src: "/gallery/hemi.jpg", thumbnail: "/gallery/hemi_thumb.jpg" },
 	];
 
 	return (
