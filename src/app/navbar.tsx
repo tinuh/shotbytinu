@@ -20,6 +20,10 @@ const elements = [
 		link: "/services",
 	},
 	{
+		name: "About",
+		link: "/about",
+	},
+	{
 		name: "Contact",
 		link: "/contact",
 	},
@@ -31,7 +35,7 @@ const menuVariants = {
 		backgroundColor: `rgba(${"255, 255, 255"}, 1)`,
 		transitionBegin: {
 			zIndex: 100,
-		}
+		},
 	},
 	closed: {
 		height: "100vh",
@@ -135,21 +139,11 @@ export default function Navbar() {
 				</div>
 			</div>
 			<div className="hidden md:flex gap-5 items-center">
-				<Link href="/" className="text-xl underline-link">
-					Home
-				</Link>
-				<Link href="/gallery" className="text-xl underline-link">
-					Gallery
-				</Link>
-				<Link href="/services" className="text-xl underline-link">
-					Services
-				</Link>
-				{/* <Link href="/about" className="text-xl underline-link">
-					About
-				</Link> */}
-				<Link href="/contact" className="text-xl underline-link">
-					Contact
-				</Link>
+				{elements.map((element, i) => (
+					<Link key={i} href={element.link} className="text-xl underline-link">
+						{element.name}
+					</Link>
+				))}
 				<a href="https://www.instagram.com/shotbytinu/" target="_blank">
 					<BsInstagram className="text-2xl hover:text-purple-600 transition-colors duration-100" />
 				</a>
