@@ -10,7 +10,7 @@ export default function Home() {
 				initial={{ opacity: 0, y: 0 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.5, delay: 0.5 }}
-				className="absolute w-full flex justify-center left-0 right-0 top-20 z-10"
+				className="absolute w-full flex justify-center left-0 right-0 top-10 md:top-20 z-10"
 			>
 				<div className="text-center text-white flex flex-col items-center">
 					<h1 className="text-6xl md:text-7xl pb-4">shotbytinu</h1>

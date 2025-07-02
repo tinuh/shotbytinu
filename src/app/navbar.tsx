@@ -80,6 +80,8 @@ export default function Navbar() {
 						size={28}
 						rounded
 						label="Open Menu"
+						aria-controls="mobile-menu"
+						aria-expanded={isOpen}
 					/>
 				</div>
 				<div className="absolute left-0 pb-[7.5vh]">

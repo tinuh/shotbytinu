@@ -11,6 +11,9 @@ import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
+// import motion from framer-motion
+import { motion } from "framer-motion";
+
 export default function page() {
 	const images = [
 		{ src: "/gallery/kiyan.jpg", thumbnail: "/gallery/kiyan_thumb.jpg" },
@@ -83,18 +86,23 @@ export default function page() {
 				>
 					<div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
 						{images.map((image, index) => (
-							<a
-								key={index}
-								href={image.src}
-								className="gallery-item break-inside-avoid mb-4"
-								data-thumb={image.thumbnail}
-							>
-								<img
-									alt={`Gallery Image ${index + 1}`}
-									src={image.thumbnail || image.src}
-									className="w-full hover:scale-102 transition-all duration-300 pb-4"
-								/>
-							</a>
+							<div key={index} className="break-inside-avoid">
+								<motion.a
+									href={image.src}
+									className="gallery-item"
+									data-thumb={image.thumbnail}
+									initial={{ opacity: 0 }}
+									whileInView={{ opacity: 1 }}
+									viewport={{ once: true, amount: 0.01 }}
+									transition={{ duration: 0.5, delay: Math.random() * 0.3 }}
+								>
+									<img
+										alt={`Gallery Image ${index + 1}`}
+										src={image.thumbnail || image.src}
+										className="w-full hover:scale-102 transition-all duration-300 pb-4"
+									/>
+								</motion.a>
+							</div>
 						))}
 					</div>
 				</LightGallery>
