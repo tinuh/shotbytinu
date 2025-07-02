@@ -83,6 +83,10 @@ export default function page() {
 					fullScreen={true}
 					selector=".gallery-item"
 					closable={true}
+					swipeToClose={true}
+					mobileSettings={{
+						showCloseIcon: true,
+					}}
 				>
 					<div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
 						{images.map((image, index) => (
