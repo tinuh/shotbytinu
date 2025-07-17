@@ -60,7 +60,7 @@ export default function Home() {
 					className="w-full h-auto"
 				>
 					<img
-						src="/gallery/gala_pic_1_thumb.jpg"
+						src="/gallery/gala_pic_3_thumb.jpg"
 						alt="BSE Gala Picture 1"
 						className="w-full h-auto"
 					/>

@@ -51,17 +51,12 @@ export default function page() {
 			src: "/gallery/grad_caps.jpg",
 			thumbnail: "/gallery/grad_caps_thumb.jpg",
 		},
-
-		{
-			src: "/gallery/gala_pic_1.jpg",
-			thumbnail: "/gallery/gala_pic_1_thumb.jpg",
-		},
 		{
 			src: "/gallery/nick_prof.jpg",
 			thumbnail: "/gallery/nick_prof_thumb.jpg",
 		},
 		{ src: "/gallery/3_suits.jpg", thumbnail: "/gallery/3_suits_thumb.jpg" },
-		// { src: "/gallery/wheaton.jpg", thumbnail: "/gallery/wheaton_thumb.jpg" },
+		{ src: "/gallery/wheaton.jpg", thumbnail: "/gallery/wheaton_thumb.jpg" },
 		{
 			src: "/gallery/char_minar.jpg",
 			thumbnail: "/gallery/char_minar_thumb.jpg",
