@@ -38,7 +38,8 @@ export default function page() {
 			src: "/gallery/gala_pic_3.jpg",
 			thumbnail: "/gallery/gala_pic_3_thumb.jpg",
 		},
-
+		{ src: "/gallery/aruba.jpg", thumbnail: "/gallery/aruba_thumb.jpg" },
+		{ src: "/gallery/flamingo.jpg", thumbnail: "/gallery/flamingo_thumb.jpg" },
 		{ src: "/gallery/burj.jpg", thumbnail: "/gallery/burj_thumb.jpg" },
 		{ src: "/gallery/nikolay.jpg", thumbnail: "/gallery/nikolay_thumb.jpg" },
 		{ src: "/gallery/nick.jpg", thumbnail: "/gallery/nick_thumb.jpg" },
